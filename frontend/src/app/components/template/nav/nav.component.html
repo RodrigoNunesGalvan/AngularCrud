@@ -1,0 +1,24 @@
+<mat-sidenav-container class="container">  <!-- as class para utilizar no css  -->
+    <mat-sidenav class="sidenav" mode="side" opened
+    fixedInViewport="true" fixedTopGap="64"> <!-- mode é uma propriedade de modelo, opened=aberto, fixedInViewport para que o site apareça
+    fixedTopGap ele dá um Gap para baixo da aplicação -->
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/"> <!-- no routerlink ele chama o link entre as páginas -->
+                <i class="material-icons"> <!-- para que os icones fiquem um abaixo do outor na aplicação -->
+                    home
+                </i>
+                Início
+            </a>
+            <a mat-list-item routerLink="/products"> <!-- aqui ele chama o Link -->
+                <i class="material-icons"> <!-- para que os icones ficarem um abaixo do outor na aplicação -->
+                    storefront
+                </i>
+                Produtos
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>> <!-- criando sistemas de rotas o ponto que será substituidos nas telas de navegação 
+        substitui o app-home por router-outlet-->
+    </mat-sidenav-content>
+</mat-sidenav-container>

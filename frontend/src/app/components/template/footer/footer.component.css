@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer > span {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: flex-end;
+    max-height: 130px;
+}
+
+.footer .texto {
+    color: #CBCBCB;
+}
